@@ -46,6 +46,7 @@ This creates a new instance of `express-paginate`.
 This middleware validates and supplies default values to `req.skip` (an alias of `req.offset`, which can be used to skip or offset a number of records for pagination, e.g. with Mongoose you would do `Model.find().skip(req.skip)`), `req.query.limit`, `req.query.page`, `res.locals.paginate`, `res.locals.hasPreviousPages`, and `res.locals.hasNextPages`.
 
 #### Arguments
+### Sagar Kumar
 
 * `limit` a Number to limit results returned per page (defaults to `10`)
 * `maxLimit` a Number to restrict the number of results returned to per page (defaults to `50`) &ndash; through this, users will not be able to override this limit (e.g. they can't pass `?limit=10000` and crash your server)
